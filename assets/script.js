@@ -7,6 +7,7 @@ let swiper = new Swiper('.swiper-container', {
 	loop: true,
     paginationBulletRender: function (index, className) {
 		let tabsName = ['All', 'Credit Only', 'Debit Only',"ACD"];
+		
 
 		if(tabsName[0] == "All"){
 			let data1 = document.getElementById('data1');
@@ -29,6 +30,8 @@ let swiper = new Swiper('.swiper-container', {
           		+ '<div class="active-mark "></div>';
 		}
 		return '<span class="' + className + '">' + tabsName[index] + '</span>';
+
+
 		
     }
 });

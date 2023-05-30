@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> swiper - sing up/login switched</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="tabs()">
+<!-- partial:index.partial.html -->
+<div class="section-tabs">
+  <!-- Swiper Tab -->
+  <div class="swiper-container swiper-tabs-nav">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        All
+      </div>
+      <div class="swiper-slide">
+        Credit Only
+      </div>
+      <div class="swiper-slide">
+        Debit Only
+      </div>
+    </div>
+  </div>
+  <!-- Swiper Content -->
+  <div class="swiper-container swiper-tabs-content">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+         <h2 id="dt1"></h2>
+      </div>
+      <div class="swiper-slide">
+        <h2 id="dt2"></h2>
+      </div>
+      <div class="swiper-slide">
+        <h2 id="dt3"></h2>
+     </div>
+    </div>
+  </div>
+
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js'></script><script  src="./script.js"></script>
+
+
+  <script>
+    const tabs = () =>{
+      const tab1_login = document.getElementById('dt1');
+      const tab2_singup = document.getElementById('dt2');
+      const tab3_newup = document.getElementById('dt3');
+
+      tab1_login.textContent = 'All';
+      tab2_singup.textContent = 'Credit Only';
+      tab3_newup.textContent = 'Debit Only';
+      
+
+    }
+  </script>
+
+</body>
+</html>

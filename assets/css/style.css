@@ -106,20 +106,18 @@ a {
   transition: font-weight 0.22s ease;
 }
 .swiper-pagination-bullet:nth-of-type(1).swiper-pagination-bullet-active ~ .active-mark {
-  left: 0%;
+  margin-left: 65px;
 }
 .swiper-pagination-bullet:nth-of-type(2).swiper-pagination-bullet-active ~ .active-mark {
-  left: 25%;
+  margin-left: 220px;
 }
 .swiper-pagination-bullet:nth-of-type(3).swiper-pagination-bullet-active ~ .active-mark {
-  left: 50%;
+  margin-left: 360px;
 }
-.swiper-pagination-bullet:nth-of-type(4).swiper-pagination-bullet-active ~ .active-mark {
-  left: 75%;
-}
+
 .swiper-pagination-bullet:first-of-type.swiper-pagination-bullet-active ~ .active-mark {
   left: 0;
-}
+}Bye
 
 .swiper-pagination-bullet-active {
   font-weight: bold;
